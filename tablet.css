@@ -1,0 +1,11 @@
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    width: 400px;
+ 
+}
