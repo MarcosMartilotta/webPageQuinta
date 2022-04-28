@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>ElMolinodelAbuelo</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 760px)">
@@ -27,38 +29,111 @@
     <main>
         <section class="main-inicio">
             <div class="main-inicio__title">
-                <h1>El molino del abuelo</h1>
+                <h1>EL MOLINO DEL ABUELO</h1>
             </div>
-            <p>Disfruta de un fin de semana a tu alcance</p>
+            <p>DISFRUTA DE UN FIN DE SEMANA A TU ALCANCE</p>
         </section>
 
         <section class="main-galeria">
-            <p>aca van fotos</p>
+            <h1>GALERIA</h1>
+            <figure>
+                <img src="./assets/imgs/casa.jpeg" alt="imagen">
+            </figure>
+            <figure>
+                <img src="./assets/imgs/casa.jpeg" alt="imagen">
+            </figure>
+            <figure>
+                <img src="./assets/imgs/casa.jpeg" alt="imagen">
+            </figure>
+            <figure>
+                <img src="./assets/imgs/casa.jpeg" alt="imagen">
+            </figure>
+            <figure>
+                <img src="./assets/imgs/casa.jpeg" alt="imagen">
+            </figure>
+            <figure>
+                <img src="./assets/imgs/casa.jpeg" alt="imagen">
+            </figure>
         </section>
 
         <section class="main-servicios">
-            <ul>
-                <li>Tv digital</li>
-                <li>WiFi</li>
-                <li>Piscina</li>
-            </ul>
-            <ul>
-                <li>blabla 21</li>
-                <li>blabla 21</li>
-            </ul>
+            <h1>Nuestros servicios</h1>
+            <div class="main-servicios__listas">
+                 <ul>
+                     <li> 
+                         <div>Tv digital</div> 
+                         <figure>
+                             <img src="./assets/imgs/monitor-de-tv.png" alt="monitor-tv">
+                         </figure>
+                     </li>
+                     <li>
+                         <div>WiFi</div>
+                         <figure>
+                             <img src="./assets/imgs/monitor-de-tv.png" alt="monitor-tv">
+                         </figure>
+                     </li>
+                     <li>
+                         <div>Piscina</div>
+                         <figure>
+                             <img src="./assets/imgs/monitor-de-tv.png" alt="monitor-tv">
+                         </figure>
+                     </li>
+                 </ul>
+                 <ul>
+                    <li>
+                        <div>Aire acondicionado</div>
+                        <figure>
+                            <img src="./assets/imgs/monitor-de-tv.png" alt="monitor-tv">
+                        </figure>
+                    </li>
+                    <li>
+                        <div>Cocina a gas</div>
+                        <figure>
+                            <img src="./assets/imgs/monitor-de-tv.png" alt="monitor-tv">
+                        </figure>
+                    </li>
+                 </ul>
+            </div>
         </section>
     
         <section class="main-ubicacion">
             <h2>Ubicacion</h2>
-            <iframe class="mapa" src="https://www.gooogle.com/maps/embed?pb=!1m18!1m12!1m3!1d1645.4592088482093!2d-58.86810251301162!3d-34.42882733317299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9daee3eaad5b%3A0x7afe33a19a78eef5!2sDON%2C%20Chacabuco%20680%2C%20B1631%20Villa%20Rosa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1646954309754!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>       </div>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1645.4592088482093!2d-58.86810251301162!3d-34.42882733317299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9daee3eaad5b%3A0x7afe33a19a78eef5!2sDON%2C%20Chacabuco%20680%2C%20B1631%20Villa%20Rosa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1646954309754!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>       </div>
         </section>
         
         <section class="main-contacto">
-
+            <h1>Contacto</h1>
+            <p>¿Tenés alguna duda? Permitinos ayudarte</p>
+            <form action="">
+                <label for="nombre">
+                    <input type="text" id="nombre" placeholder="Nombre">
+                </label>
+                <label for="apellido">
+                    <input type="text" id="apellido" placeholder="Apellido">
+                </label>
+                <label for="email">
+                    <input type="email" id="email" placeholder="Correo electrónico" >
+                </label>
+                <label for="mensaje">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="¿Como podemos ayudarte?"></textarea>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
-
+        <div class="footer__direction">
+            <p>chacabuco 680</p>
+        </div>
+        <div class="footer__tel">
+            <p>4712309213</p>
+        </div>
+        <div class="footer__email">
+            <p>mail@gmail.com</p>
+        </div>
+        <div class="footer__redes">
+            <p>Seguinos</p>
+        </div>
     </footer>
 </body>
 </html>
