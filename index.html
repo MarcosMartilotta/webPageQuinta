@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <title>ElMolinodelAbuelo</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 760px)">
-    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 1000px)">
+    <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 820px)">
 </head>
 <body>
     <header>
        <nav>
             <figure>
-                <img src="./assets/imgs/logo.png" alt="Logo molino">
+                <img src="./assets/icons/icons8-granja-de-molino-de-viento-64.png" alt="Logo molino">
             </figure>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Galeria</a></li>
                 <li><a href="#">Servicios</a></li>
+                <li><a href="#">Galeria</a></li>
                 <li><a href="#">Ubicacion</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
@@ -34,30 +35,8 @@
             <p>DISFRUTA DE UN FIN DE SEMANA A TU ALCANCE</p>
         </section>
 
-        <section class="main-galeria">
-            <h1>GALERIA</h1>
-            <figure>
-                <img src="./assets/imgs/casa.jpeg" alt="imagen">
-            </figure>
-            <figure>
-                <img src="./assets/imgs/casa.jpeg" alt="imagen">
-            </figure>
-            <figure>
-                <img src="./assets/imgs/casa.jpeg" alt="imagen">
-            </figure>
-            <figure>
-                <img src="./assets/imgs/casa.jpeg" alt="imagen">
-            </figure>
-            <figure>
-                <img src="./assets/imgs/casa.jpeg" alt="imagen">
-            </figure>
-            <figure>
-                <img src="./assets/imgs/casa.jpeg" alt="imagen">
-            </figure>
-        </section>
-
         <section class="main-servicios">
-            <h1>Nuestros servicios</h1>
+            <h1 class="main-servicios__title">NUESTROS SERVICIOS</h1>
             <div class="main-servicios__listas">
                  <ul>
                      <li> 
@@ -69,13 +48,13 @@
                      <li>
                          <div>WiFi</div>
                          <figure>
-                             <img src="./assets/imgs/monitor-de-tv.png" alt="monitor-tv">
+                             <img src="./assets/icons/icons8-wifi-30.png" alt="wifi">
                          </figure>
                      </li>
                      <li>
                          <div>Piscina</div>
                          <figure>
-                             <img src="./assets/imgs/monitor-de-tv.png" alt="monitor-tv">
+                             <img src="./assets/icons/icons8-infinity-pool-30.png" alt="piscina">
                          </figure>
                      </li>
                  </ul>
@@ -83,57 +62,107 @@
                     <li>
                         <div>Aire acondicionado</div>
                         <figure>
-                            <img src="./assets/imgs/monitor-de-tv.png" alt="monitor-tv">
+                            <img src="./assets/icons/icons8-invierno-30.png" alt="aire-acondicionado">
                         </figure>
                     </li>
                     <li>
                         <div>Cocina a gas</div>
                         <figure>
-                            <img src="./assets/imgs/monitor-de-tv.png" alt="monitor-tv">
+                            <img src="./assets/icons/icons8-quemador-de-gas-30.png" alt="quemador a gas">
                         </figure>
                     </li>
                  </ul>
             </div>
         </section>
-    
-        <section class="main-ubicacion">
-            <h2>Ubicacion</h2>
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1645.4592088482093!2d-58.86810251301162!3d-34.42882733317299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9daee3eaad5b%3A0x7afe33a19a78eef5!2sDON%2C%20Chacabuco%20680%2C%20B1631%20Villa%20Rosa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1646954309754!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>       </div>
+
+        <section class="main-galeria">
+            <h1>GALERIA</h1>
+            <div class="container_imgs">
+                 <figure>
+                     <img src="./assets/imgs/pexels-max-vakhtbovych-7587467.jpg" alt="imagen">
+                 </figure>
+                 <figure>
+                     <img src="./assets/imgs/9400ccc2f5ac5a0a3fbbbf65c835d01f.jpg" alt="imagen">
+                 </figure>
+                 <figure>
+                     <img src="./assets/imgs/pexels-natalija-mislevicha-621720.jpg" alt="imagen">
+                 </figure>
+                 <figure>
+                     <img src="./assets/imgs/pexels-tom-fisk-9633088.jpg" alt="imagen">
+                 </figure>
+                 <figure>
+                     <img src="./assets/imgs/pexels-littlehampton-bricks-4493654 (1).jpg" alt="imagen">
+                 </figure>
+                 <figure>
+                     <img src="./assets/imgs/pexels-victoria-borodinova-1648776.jpg" alt="imagen">
+                 </figure>
+            </div>
         </section>
-        
-        <section class="main-contacto">
-            <h1>Contacto</h1>
-            <p>¿Tenés alguna duda? Permitinos ayudarte</p>
-            <form action="">
-                <label for="nombre">
-                    <input type="text" id="nombre" placeholder="Nombre">
-                </label>
-                <label for="apellido">
-                    <input type="text" id="apellido" placeholder="Apellido">
-                </label>
-                <label for="email">
-                    <input type="email" id="email" placeholder="Correo electrónico" >
-                </label>
-                <label for="mensaje">
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="¿Como podemos ayudarte?"></textarea>
-                </label>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+
+        <div class="ubi-cont">
+            
+                <section class="main-ubicacion">
+                    <h1 class="main-ubicacion__title">UBICACION</h1>
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1645.4592088482093!2d-58.86810251301162!3d-34.42882733317299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9daee3eaad5b%3A0x7afe33a19a78eef5!2sDON%2C%20Chacabuco%20680%2C%20B1631%20Villa%20Rosa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1646954309754!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>       </div>
+                </section>
+
+                <section class="main-contacto">
+                    <h1 class="main-contacto__title">CONTACTO</h1>
+                    <p>¿Tenés alguna duda? Permitinos ayudarte</p>
+                    <form action="">
+                        <label for="nombre">
+                            <input type="text" id="nombre" placeholder="Nombre">
+                        </label>
+                        <label for="apellido">
+                            <input type="text" id="apellido" placeholder="Apellido">
+                        </label>
+                        <label for="email">
+                            <input type="email" id="email" placeholder="Correo electrónico" >
+                        </label>
+                        <label for="mensaje">
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="¿Como podemos ayudarte?"></textarea>
+                        </label>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+
+        </div>
     </main>
     <footer>
         <div class="footer__direction">
-            <p>chacabuco 680</p>
+            <figure>
+                <img src="./assets/icons/icons8-google-maps-24.png" alt="">
+            </figure>
+            <p>Calle 680</p>
         </div>
         <div class="footer__tel">
-            <p>4712309213</p>
+            <figure>
+                <img src="./assets/icons/icons8-telefono-24.png" alt="">
+            </figure>
+            <p>47123-09213</p>
         </div>
         <div class="footer__email">
-            <p>mail@gmail.com</p>
+            <figure>
+                <img src="./assets/icons/icons8-correo-24.png" alt="">
+            </figure>
+            <p>example@gmail.com</p>
         </div>
         <div class="footer__redes">
             <p>Seguinos</p>
+            <figure>
+                <img src="./assets/icons/icons8-facebook-rodeado-de-circulo-24.png" alt="">
+            </figure>
+            <figure>
+                <img src="./assets/icons/icons8-instagram-24.png" alt="">
+            </figure>
+            <figure>
+                <img src="./assets/icons/icons8-pinterest-24.png" alt="">
+            </figure>
+            <figure>
+                <img src="./assets/icons/icons8-twitter-cuadrado-24.png" alt="">
+            </figure>
         </div>
+        <p></a> icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
     </footer>
 </body>
 </html>

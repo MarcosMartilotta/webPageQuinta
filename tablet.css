@@ -1,4 +1,7 @@
 header nav {
+    z-index: 2;
+    background-color: rgba(166,188,9,0.5);
+    position:fixed;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -7,5 +10,11 @@ header nav {
 
 header nav ul {
     width: 400px;
- 
 }
+
+.main-servicios__listas ul li figure {
+    width: 1.5rem;
+    display: inline-block;
+    margin-left: 3rem;
+}
+
